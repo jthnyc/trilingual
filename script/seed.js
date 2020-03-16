@@ -43,7 +43,7 @@ async function seed() {
       price: 100,
       inventory: 30,
       imageUrl:
-        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
       description:
         'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     }),
@@ -55,7 +55,7 @@ async function seed() {
       price: 100,
       inventory: 10,
       imageUrl:
-        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
       description:
         'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     }),
@@ -67,7 +67,7 @@ async function seed() {
       price: 100,
       inventory: 15,
       imageUrl:
-        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
       description:
         'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     })

@@ -27,7 +27,7 @@ const Product = db.define('product', {
     min: 0
   },
   imageUrl: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     defaultValue:
       'https://images.unsplash.com/photo-1575304355370-546314563f95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=714&q=80'
   },
