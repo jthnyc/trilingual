@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User, Course} = require('../server/db/models')
+const {User, Order, Product, ProductOrder} = require('../server/db/models')
 
 async function seed() {
   await db.sync({force: true})
@@ -34,28 +34,87 @@ async function seed() {
     })
   ])
 
-  const courses = await Promise.all([
-    Course.create({
-      language: 'Chinese - Traditional',
-      level: 1,
+  const products = await Promise.all([
+    Product.create({
+      SKU: '10000001',
+      name: 'Model #1',
+      color: 'Black',
+      category: 'Marvel',
+      price: 100,
+      inventory: 30,
+      imageUrl:
+        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
       description:
-        'Easiest level to get started with learning Chinese! Start by saying hello!'
+        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     }),
-    Course.create({
-      language: 'Chinese - Traditional',
-      level: 2,
+    Product.create({
+      SKU: '10000002',
+      name: 'Model #2',
+      color: 'Black',
+      category: 'DC',
+      price: 100,
+      inventory: 10,
+      imageUrl:
+        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
       description:
-        'Learn food items in Chinese cuisine along with simple phrases!'
+        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     }),
-    Course.create({
-      language: 'Chinese - Traditional',
-      level: 3,
-      description: 'Getting better each time! More advanced level in Mandarin'
+    Product.create({
+      SKU: '10000002',
+      name: 'Model #3',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 100,
+      inventory: 15,
+      imageUrl:
+        'https://athleta.gap.com/webcontent/0018/236/777/cn18236777.jpg',
+      description:
+        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
     })
   ])
 
+  const orders = await Promise.all([
+    Order.create({
+      status: 'Pending',
+      firstName: 'Customer',
+      lastName: 'NumberOne',
+      address: '85 Customer St.',
+      city: 'New York',
+      state: 'NY',
+      zipcode: '11101',
+      phone: '123-456-1818'
+    }),
+    Order.create({
+      status: 'Pending',
+      firstName: 'Customer',
+      lastName: 'NumberTwo',
+      address: '100 Great St.',
+      city: 'New York',
+      state: 'NY',
+      zipcode: '11109',
+      phone: '212-246-2858'
+    }),
+    Order.create({
+      status: 'Processed',
+      firstName: 'Customer',
+      lastName: 'NumberThree',
+      address: '102 Degrees St.',
+      city: 'New York',
+      state: 'NY',
+      zipcode: '11108',
+      phone: '828-818-3868'
+    })
+  ])
+
+  const productOrder = await Promise.all([
+    ProductOrder.create({productId: '1', orderId: '1', quantity: 1}),
+    ProductOrder.create({productId: '2', orderId: '2', quantity: 2})
+  ])
+
   console.log(`seeded ${users.length} users`)
-  console.log(`seeded ${courses.length} courses`)
+  console.log(`seeded ${products.length} courses`)
+  console.log(`seeded ${orders.length} orders`)
+  console.log(`seeded ${productOrder.length} product orders`)
   console.log(`seeded successfully`)
 }
 
