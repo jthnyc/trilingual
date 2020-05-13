@@ -40,36 +40,96 @@ async function seed() {
       name: 'Model #1',
       color: 'Black',
       category: 'Marvel',
-      price: 100,
+      price: 20,
       inventory: 30,
       imageUrl:
-        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1528363654397-MIEA5WP4XUOS5H6PHG44/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/yoda.125.jpg',
       description:
-        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }),
     Product.create({
       SKU: '10000002',
       name: 'Model #2',
       color: 'Black',
       category: 'DC',
-      price: 100,
+      price: 110,
       inventory: 10,
       imageUrl:
-        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1528363748207-Z0T3D5DDULMC4JMX6P8L/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/boba+fat.15.jpg',
       description:
-        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }),
     Product.create({
-      SKU: '10000002',
+      SKU: '10000003',
       name: 'Model #3',
       color: 'Black',
       category: 'Studio Ghibli',
-      price: 100,
-      inventory: 15,
+      price: 120,
+      inventory: 5,
       imageUrl:
-        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737181811-4A81X0Z56P3SO0MCVWIN/ke17ZwdGBToddI8pDm48kH4yUCUXJ17ohaS7KdQkQaJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQvcaGJ2FZA3HCKOP4jCOOobAjIrPjv1CYdzo4XjbaoYoaB7cXlC74RGNr1M0KekWQ/Joker.21+copy.jpg',
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1528363924362-R1ABQLCOP0HDCB8TD6OF/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/angel.21.jpg',
       description:
-        'Fabric is buttery soft with support that feels like a gentle hug.\n Dries in a flash for ultimate comfort when breaking a sweat \nFeatures: Side pocket, Moisture-wicking, Breathable, Quick-drying \nMaterial: Nylon/Lycra \nCare: Machine wash and dry.'
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }),
+    Product.create({
+      SKU: '10000004',
+      name: 'Model #4',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 80,
+      inventory: 20,
+      imageUrl:
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1528363850091-ZCP7VSZTL3NMDUF4LJRT/ke17ZwdGBToddI8pDm48kIwYrX8g-J6Wt7oDerRK1Y97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0g9xiYCO_4ze-uEG5pWlE5P5pIO1MPUwlZmLL1C7Ledynnf-vMMq-Nlah2ITzz9B1Q/ninjabatman+merged+3.0.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }),
+    Product.create({
+      SKU: '10000005',
+      name: 'Model #5',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 1000,
+      inventory: 1,
+      imageUrl:
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737179841-FUCI0I2YXM8MXNCATFAJ/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/Sylvanas+309.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }),
+    Product.create({
+      SKU: '10000006',
+      name: 'Model #6',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 20,
+      inventory: 330,
+      imageUrl:
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737183925-9CRF6WHIIGLVR2ITXV2X/ke17ZwdGBToddI8pDm48kMPu3vAJVIO2ksrI68T0UXN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mxU0godxi02JM9uVemPLqxZRccujZ0JBEEuCWjyuHp4fVbeDgUc_jnUPuWllkKthw/Zoost+Combined.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }),
+    Product.create({
+      SKU: '10000007',
+      name: 'Model #7',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 90,
+      inventory: 50,
+      imageUrl:
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1553737183925-9CRF6WHIIGLVR2ITXV2X/ke17ZwdGBToddI8pDm48kMPu3vAJVIO2ksrI68T0UXN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mxU0godxi02JM9uVemPLqxZRccujZ0JBEEuCWjyuHp4fVbeDgUc_jnUPuWllkKthw/Zoost+Combined.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }),
+    Product.create({
+      SKU: '10000008',
+      name: 'Model #8',
+      color: 'Black',
+      category: 'Studio Ghibli',
+      price: 800,
+      inventory: 5,
+      imageUrl:
+        'https://images.squarespace-cdn.com/content/v1/51c274bee4b09c37644e4a12/1528363957972-YAJ5BCOG5Y9UJJYRVYS3/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/deadpool.55.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     })
   ])
 
