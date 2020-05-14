@@ -38,5 +38,5 @@ form div {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  border: 0.2em solid red;
+  /* border: 0.2em solid red; */
 }
