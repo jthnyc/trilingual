@@ -3,8 +3,8 @@ import axios from 'axios'
 /**
  * ACTION TYPES
  */
-const GET_PRODUCTS = 'GET_PRODUCTS'
-const GET_SINGLE_PRODUCT = 'GET_SINGLE_PRODUCT '
+const GOT_PRODUCTS = 'GOT_PRODUCTS'
+const GOT_SINGLE_PRODUCT = 'GOT_SINGLE_PRODUCT'
 
 /**
  * INITIAL STATE
@@ -17,28 +17,28 @@ const initialState = {
 /**
  * ACTION CREATORS
  */
-const getProducts = products => ({type: GET_PRODUCTS, products})
-const getSingleProduct = singleProduct => ({
-  type: GET_SINGLE_PRODUCT,
-  singleProduct
+const gotProducts = products => ({type: GOT_PRODUCTS, products})
+const gotSingleProduct = currentProduct => ({
+  type: GOT_SINGLE_PRODUCT,
+  currentProduct
 })
 
 /**
  * THUNK CREATORS
  */
-export const gotProducts = () => async dispatch => {
+export const getProducts = () => async dispatch => {
   try {
     const {data} = await axios.get('/api/products')
-    dispatch(getProducts(data))
+    dispatch(gotProducts(data))
   } catch (err) {
     console.error(err)
   }
 }
 
-export const gotSingleProduct = id => async dispatch => {
+export const getSingleProduct = id => async dispatch => {
   try {
     const {data} = await axios.get(`/api/products/${id}`)
-    dispatch(getSingleProduct(data))
+    dispatch(gotSingleProduct(data))
   } catch (err) {
     console.error(err)
   }
@@ -49,9 +49,9 @@ export const gotSingleProduct = id => async dispatch => {
  */
 export default function(state = initialState, action) {
   switch (action.type) {
-    case GET_PRODUCTS:
+    case GOT_PRODUCTS:
       return {...state, products: action.products}
-    case GET_SINGLE_PRODUCT:
+    case GOT_SINGLE_PRODUCT:
       return {...state, currentProduct: action.currentProduct}
     default:
       return state

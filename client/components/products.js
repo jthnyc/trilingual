@@ -1,10 +1,11 @@
 import React from 'react'
-import {gotProducts} from '../store'
+import {getProducts} from '../store'
 import {connect} from 'react-redux'
+import Product from './product'
 
 class Products extends React.Component {
   componentDidMount() {
-    this.props.gotProducts()
+    this.props.getProducts()
   }
 
   render() {
@@ -12,17 +13,15 @@ class Products extends React.Component {
 
     return (
       <div className="products-container">
-        <ul className="item-container">
-          {products.map(product => {
-            return (
-              <li key={product.id} className="item">
-                <img src={product.imageUrl} width="400" height="300" />
-                <h4>{product.name}</h4>
-                <p>{product.description}</p>
-              </li>
-            )
-          })}
-        </ul>
+        <div className="item-container">
+          {products ? (
+            products.map(product => {
+              return <Product key={product.id} product={product} />
+            })
+          ) : (
+            <div>No products :(</div>
+          )}
+        </div>
       </div>
     )
   }
@@ -36,7 +35,7 @@ const mapState = state => {
 
 const mapDispatch = dispatch => {
   return {
-    gotProducts: () => dispatch(gotProducts())
+    getProducts: () => dispatch(getProducts())
   }
 }
 

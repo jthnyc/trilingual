@@ -1,28 +1,27 @@
 import React from 'react'
-import {gotSingleProduct} from '../store'
+import {getSingleProduct} from '../store'
 import {connect} from 'react-redux'
 
 class SingleProduct extends React.Component {
   componentDidMount() {
-    this.props.gotSingleProduct(this.props.productId)
+    this.props.getSingleProduct(this.props.productId)
   }
 
   render() {
-    const product = this.props.currentProduct
-    console.log('PRODUCT: ', product)
-    return <div>{product}</div>
+    return <div>{this.props.currentProduct.name}</div>
   }
 }
 
-const mapState = state => {
+const mapState = (state, ownProps) => {
   return {
-    currentProduct: state.product.currentProduct
+    currentProduct: state.product.currentProduct,
+    productId: ownProps.match.params.id
   }
 }
 
 const mapDispatch = dispatch => {
   return {
-    gotSingleProduct: id => dispatch(gotSingleProduct(id))
+    getSingleProduct: id => dispatch(getSingleProduct(id))
   }
 }
 
