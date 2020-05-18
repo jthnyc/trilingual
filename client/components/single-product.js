@@ -4,12 +4,20 @@ import {connect} from 'react-redux'
 
 class SingleProduct extends React.Component {
   componentDidMount() {
+    console.log('SINGLE PRODUCT PROPS: ', this.props.currentProduct)
     this.props.getSingleProduct(this.props.productId)
   }
 
   render() {
-    console.log('this props: ', this.props)
-    return <div>{this.props.currentProduct.name}</div>
+    const currentProduct = this.props.currentProduct
+
+    return (
+      <div>
+        <img src={currentProduct.imageUrl} />
+        <h3>{currentProduct.name}</h3>
+        <p>{currentProduct.description}</p>
+      </div>
+    )
   }
 }
 
