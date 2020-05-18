@@ -8,6 +8,7 @@ class SingleProduct extends React.Component {
   }
 
   render() {
+    console.log('this props: ', this.props)
     return <div>{this.props.currentProduct.name}</div>
   }
 }
