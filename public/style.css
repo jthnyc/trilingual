@@ -40,3 +40,14 @@ form div {
   flex-wrap: wrap;
   /* border: 0.2em solid red; */
 }
+
+.single-product-container {
+  display: flex;
+  border: 2px dotted green;
+}
+
+.product-detail {
+  display: inline-block;
+  border: 3px solid purple;
+  padding: 2em;
+}

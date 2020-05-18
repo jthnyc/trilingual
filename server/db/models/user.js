@@ -24,6 +24,10 @@ const User = db.define('user', {
       return () => this.getDataValue('password')
     }
   },
+  imageUrl: {
+    type: Sequelize.TEXT,
+    defaultValue: 'https://api.adorable.io/avatars/248/abott@adorable.png'
+  },
   salt: {
     type: Sequelize.STRING,
     // Making `.salt` act like a function hides it when serializing to JSON.

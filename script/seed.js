@@ -12,25 +12,29 @@ async function seed() {
       firstName: 'Joanna',
       lastName: 'Huang',
       email: 'joanna@email.com',
-      password: '123'
+      password: '123',
+      imageUrl: 'https://api.adorable.io/avatars/248/abott@adorable.png'
     }),
     User.create({
       firstName: 'Johannes',
       lastName: 'Brahms',
       email: 'johannes@email.com',
-      password: '123'
+      password: '123',
+      imageUrl: 'https://api.adorable.io/avatars/248/abott@adorable.png'
     }),
     User.create({
       firstName: 'Amadeus',
       lastName: 'Mozart',
       email: 'amadeus@email.com',
-      password: '123'
+      password: '123',
+      imageUrl: 'https://api.adorable.io/avatars/248/abott@adorable.png'
     }),
     User.create({
       firstName: 'Sergei',
       lastName: 'Rachmaninov',
       email: 'sergei@email.com',
-      password: '123'
+      password: '123',
+      imageUrl: 'https://api.adorable.io/avatars/248/abott@adorable.png'
     })
   ])
 

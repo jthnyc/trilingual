@@ -4,7 +4,6 @@ import {connect} from 'react-redux'
 
 class SingleProduct extends React.Component {
   componentDidMount() {
-    console.log('SINGLE PRODUCT PROPS: ', this.props.currentProduct)
     this.props.getSingleProduct(this.props.productId)
   }
 
@@ -12,10 +11,24 @@ class SingleProduct extends React.Component {
     const currentProduct = this.props.currentProduct
 
     return (
-      <div>
+      <div className="single-product-container">
         <img src={currentProduct.imageUrl} />
-        <h3>{currentProduct.name}</h3>
-        <p>{currentProduct.description}</p>
+        <div className="product-detail">
+          <h3>{currentProduct.name}</h3>
+          <p>
+            {currentProduct.description ? (
+              currentProduct.description
+            ) : (
+              <div>Error in inventory</div>
+            )}
+          </p>
+          <div>
+            <h5>${currentProduct.price}</h5>
+            <p>{currentProduct.inventory} left</p>
+            <input placeholder="quantity" />
+            <button type="submit">Get It Now</button>
+          </div>
+        </div>
       </div>
     )
   }
