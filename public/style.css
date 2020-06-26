@@ -12,12 +12,29 @@ label {
 
 nav a {
   display: inline-block;
-  margin: 1em;
+  margin: 1.5em;
 }
 
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+/* .home {
+  display: flex;
+} */
+
+.intro-video {
+  display: flex;
+  /* border: 0.5em solid yellow; */
+  align-items: stretch;
+  justify-content: center;
 }
 
 .products-container {
@@ -30,8 +47,13 @@ form div {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%;
   justify-items: center;
-  border: 0.8em dotted black;
+  /* border: 0.8em dotted black; */
   padding: 2em;
+}
+
+.item-container p {
+  display: flex;
+  width: 90%;
 }
 
 .item {

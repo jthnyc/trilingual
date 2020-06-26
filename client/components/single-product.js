@@ -15,19 +15,17 @@ class SingleProduct extends React.Component {
         <img src={currentProduct.imageUrl} />
         <div className="product-detail">
           <h3>{currentProduct.name}</h3>
-          <p>
-            {currentProduct.description ? (
-              currentProduct.description
-            ) : (
-              <div>Error in inventory</div>
-            )}
-          </p>
           <div>
-            <h5>${currentProduct.price}</h5>
+            <h4>${currentProduct.price}</h4>
             <p>{currentProduct.inventory} left</p>
             <input placeholder="quantity" />
             <button type="submit">Get It Now</button>
           </div>
+          <p>
+            {currentProduct.description
+              ? currentProduct.description
+              : 'Error in inventory'}
+          </p>
         </div>
       </div>
     )
