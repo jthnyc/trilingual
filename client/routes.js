@@ -7,6 +7,7 @@ import {
   Signup,
   Home,
   UserHome,
+  Cart,
   Products,
   SingleProduct
 } from './components'
@@ -30,6 +31,7 @@ class Routes extends Component {
         <Route path="/signup" component={Signup} />
         <Route path="/products/:id" component={SingleProduct} />
         <Route path="/products" component={Products} />
+        <Route path="/cart/:userId" component={Cart} />
         <Route path="/account" component={UserHome} />
         <Route exact path="/" component={Home} />
         {isLoggedIn && (
@@ -39,7 +41,7 @@ class Routes extends Component {
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}
-        <Route component={Login} />
+        <Route path="*" component={Login} />
       </Switch>
     )
   }
