@@ -78,7 +78,7 @@ router.post('/:userId', async (req, res, next) => {
       currentProductOrder.quantity++
       currentProductOrder.save()
     }
-    res.status(201).removeListener(currentProductOrder)
+    res.status(201).json(currentProductOrder)
   } catch (error) {
     next(error)
   }
